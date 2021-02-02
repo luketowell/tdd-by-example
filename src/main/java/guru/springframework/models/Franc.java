@@ -1,13 +1,9 @@
 package guru.springframework.models;
 
-public class Dollar extends Money {
+public class Franc extends Money {
 
-    public Dollar(int amount) {
+    public Franc(int amount) {
         this.amount = amount;
-    }
-
-    public Dollar times(int factor) {
-        return new Dollar (amount *factor);
     }
 
     public Integer getAmount() {
@@ -18,11 +14,12 @@ public class Dollar extends Money {
         this.amount = amount;
     }
 
+    public Franc times(int factor) {
+        return new Franc (amount *factor);
+    }
+
     @Override
     public int hashCode() {
         return amount;
     }
-
 }
-
-
