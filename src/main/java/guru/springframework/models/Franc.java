@@ -14,9 +14,7 @@ public class Franc extends Money {
         this.amount = amount;
     }
 
-    public Franc times(int factor) {
-        return new Franc (amount *factor);
-    }
+
 
     @Override
     public int hashCode() {
